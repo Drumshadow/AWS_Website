@@ -1,14 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Button from './Componets/Buttons'
+import React, { Component } from 'react'
+import Navbar from "./Componets/NavigationBar";
 
-function App() {
-  return (
-    <div className="App">
-      <Button/>
-    </div>
-  );
+import GlobalStyle from "./style/Global";
+
+class App extends Component {
+    state = {
+        navbarOpen: false
+    };
+
+    handleNavbar = () => {
+        this.setState({ navbarOpen: !this.state.navbarOpen });
+    };
+
+    render() {
+
+        return (
+            <>
+                <Navbar
+                    navbarState={this.state.navbarOpen}
+                    handleNavbar={this.handleNavbar}
+                />
+                <GlobalStyle />
+            </>
+        )
+    }
 }
 
-export default App;
+export default App
