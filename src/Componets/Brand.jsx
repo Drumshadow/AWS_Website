@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from "styled-components";
 
-import logo from "../assets/logo-min.png";
+import logo from "../assets/baylor.png";
 
 const Brand = () => {
     return (
