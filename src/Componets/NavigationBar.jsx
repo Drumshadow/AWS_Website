@@ -5,6 +5,13 @@ import { useSpring, animated, config } from "react-spring";
 import Brand from "./Brand";
 import BurgerMenu from "./BurgerMenu";
 import CollapseMenu from "./CollapseMenu";
+import Grid from "@material-ui/core/Grid";
+
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import IconButton from "@material-ui/core/IconButton";
+import Typography from "@material-ui/core/Typography";
+
 
 const Navbar = (props) => {
     const barAnimation = useSpring({
@@ -23,13 +30,29 @@ const Navbar = (props) => {
         <>
             <NavBar style={barAnimation}>
                 <FlexContainer>
+                    <Grid Item>
                     <Brand />
+                        <Typography variant="h2" class="text" style={{
+                            color: "white",
+                            textShadow: "-0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000"
+                        }}>
+                            Ashton Damrel
+                        </Typography>
+                        <IconButton size="medium" style={{ color: "#0077b5" }} href="https://www.linkedin.com/in/ashton-damrel/" target="_blank">
+                            <LinkedInIcon size="medium"/>
+                        </IconButton>
+                        <IconButton size="medium" style={{ color: "black" }} href="https://github.com/Drumshadow" target="_blank">
+                            <GitHubIcon size="medium"/>
+                        </IconButton>
+                    </Grid>
                     <NavLinks style={linkAnimation}>
-                        <a href="/">link n1</a>
-                        <a href="/">link n2</a>
-                        <a href="/">link n3</a>
-                        <a href="/">link n4</a>
+                        <a href="/">About</a>
+                        <a href="/">Work Experience</a>
+                        <a href="/">Education</a>
+                        <a href="/">Projects</a>
+                        <a href="/">Contact</a>
                     </NavLinks>
+
                     <BurgerWrapper>
                         <BurgerMenu
                             navbarState={props.navbarState}

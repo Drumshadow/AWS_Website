@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from "styled-components";
 
-import logo from "../assets/baylor.png";
+import logo from "../assets/BU.png";
 
 const Brand = () => {
     return (
         <Image src={logo} alt="Company Logo" />
     )
-}
+};
 
 export default Brand
 
