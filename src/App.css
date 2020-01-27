@@ -24,6 +24,11 @@
   color: white;
 }
 
+.navMenu{
+  width: 40%;
+  background-color: white;
+}
+
 .App-link {
   color: #61dafb;
 }

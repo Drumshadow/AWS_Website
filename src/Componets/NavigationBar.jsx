@@ -30,29 +30,29 @@ const Navbar = (props) => {
         <>
             <NavBar style={barAnimation}>
                 <FlexContainer>
-                    <Grid Item>
-                    <Brand />
+                    <Grid container direction="row" justify="flex-start" alignItems="center" >
+                        <Brand />
                         <Typography variant="h2" class="text" style={{
                             color: "white",
                             textShadow: "-0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000"
                         }}>
                             Ashton Damrel
                         </Typography>
-                        <IconButton size="medium" style={{ color: "#0077b5" }} href="https://www.linkedin.com/in/ashton-damrel/" target="_blank">
-                            <LinkedInIcon size="medium"/>
+                        <IconButton size="small" style={{ color: "#0077b5" }} href="https://www.linkedin.com/in/ashton-damrel/" target="_blank">
+                            <LinkedInIcon size="small"/>
                         </IconButton>
-                        <IconButton size="medium" style={{ color: "black" }} href="https://github.com/Drumshadow" target="_blank">
-                            <GitHubIcon size="medium"/>
+                        <IconButton size="small" style={{ color: "black" }} href="https://github.com/Drumshadow" target="_blank">
+                            <GitHubIcon size="small"/>
                         </IconButton>
                     </Grid>
+                    <Grid>
                     <NavLinks style={linkAnimation}>
-                        <a href="/">About</a>
-                        <a href="/">Work Experience</a>
-                        <a href="/">Education</a>
-                        <a href="/">Projects</a>
-                        <a href="/">Contact</a>
+                        <a style={{right: "0"}} href="/">Work Experience</a>
+                        <a style={{right: "0"}} href="/">Education</a>
+                        <a style={{right: "0"}} href="/">Projects</a>
+                        <a style={{right: "0"}} href="/">Contact</a>
                     </NavLinks>
-
+                    </Grid>
                     <BurgerWrapper>
                         <BurgerMenu
                             navbarState={props.navbarState}
@@ -94,6 +94,8 @@ const NavLinks = styled(animated.ul)`
   justify-self: end;
   list-style-type: none;
   margin: auto 0;
+  margin-top: 2vh;
+  width: 45vw;
 
   & a {
     color: #dfe6e9;
