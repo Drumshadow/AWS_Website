@@ -35,7 +35,7 @@ class App extends Component {
                                 <Typography class="text" style={{ fontSize: "25px", marginTop: "5%", marginLeft: "10%", width: "50vw", height: "30vh" }}>
                                     I entered college not sure of what I wanted to do, but I quickly discovered my passion for computer science.
                                     Computer science is an incredible field with infinite possibilities, the only true
-                                    limit is a persons creativity because of this I aim to equip myself with as many tools as I can that way there is no problem I cannot solve.
+                                    limit is a persons creativity. In light of these infinite possibilities I aim to equip myself with as many tools as I can that way there is no problem I cannot solve.
                                     Some other things I am passionate about and enjoy are gaming, coding, soccer, and bowling.
                                 </Typography>
                             </Grid>
