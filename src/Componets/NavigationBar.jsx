@@ -47,6 +47,7 @@ const Navbar = (props) => {
                     </Grid>
                     <Grid>
                     <NavLinks style={linkAnimation}>
+                        <a style={{right: "0"}} href="/">About</a>
                         <a style={{right: "0"}} href="/">Work Experience</a>
                         <a style={{right: "0"}} href="/">Education</a>
                         <a style={{right: "0"}} href="/">Projects</a>
