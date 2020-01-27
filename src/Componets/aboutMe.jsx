@@ -19,24 +19,26 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-export default function SimplePaper() {
-    const classes = useStyles();
+const aboutMe = (props) =>{
 
     return (
-        <div className={classes.root}>
-            <Paper style={{ marginTop: "25%", marginLeft: "12%", width: "75vw", height: "75vh" }} id="first">
+        <div>
+            <Paper style={{ marginTop: "25%", marginLeft: "12%", width: "75vw", height: "40vh" }} id="first">
                 <Grid container direction="row" justify="flex-start" alignItems="flex-start">
                     <Grid item>
-                        <Img style={{ height: "38vh", width: "20vw", marginLeft: "10%", marginTop: "7%" }}
-                             alt="Ashton Damrel" src={headShot} />
+                        <Img style={{ width: 150, height: 150, borderRadius: 150 / 2, overflow: "hidden", borderWidth: 3, borderColor: "red"}} alt="Ashton Damrel" src={headShot} />
                     </Grid>
                     <Grid item>
                         <Typography class="text" style={{ fontSize: "25px", marginTop: "5%", marginLeft: "10%", width: "50vw", height: "30vh" }}>
-
+                            I entered college not sure of what I wanted to do but quickly found myself enjoying computer science because of the unlimited
+                            amount of problems you can solve with it. Computer science is such and incredible field with limitless possibilities, the only
+                            limit is the persons creativity so I aim to equip myself with as many tools as I can that way there is no problem I cannot solve.
+                            I enjoy gaming, coding, soccer, and bowling.
                         </Typography>
                     </Grid>
                 </Grid>
             </Paper>
         </div>
     );
-}
+};
+export default aboutMe;
