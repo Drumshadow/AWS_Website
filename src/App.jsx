@@ -26,7 +26,7 @@ class App extends Component {
                     handleNavbar={this.handleNavbar}
                 />
                 <div style={{ width: '100%' }}>
-                    <Paper style={{ marginTop: "25%", marginLeft: "12%", width: "75vw", height: "40vh" }} id="first">
+                    <Paper style={{ marginTop: "25%", marginLeft: "12%", width: "75vw", height: "60vh" }} id="first">
                         <Grid container direction="row" justify="flex-start" alignItems="flex-start">
                             <Grid item>
                                 <Img style={{ width: 150, height: 150, borderRadius: 150 / 2, overflow: "hidden", borderWidth: 3, borderColor: "red"}} alt="Ashton Damrel" src={headShot} />
@@ -37,6 +37,9 @@ class App extends Component {
                                     Computer science is an incredible field with infinite possibilities, the only true
                                     limit is a persons creativity. In light of these infinite possibilities I aim to equip myself with as many tools as I can that way there is no problem I cannot solve.
                                     Some other things I am passionate about and enjoy are gaming, coding, soccer, and bowling.
+                                    <br/>
+                                    <br/>
+                                    My professional interests include: Algorithm optimization, game design and principles, computer graphics, and machine learning.
                                 </Typography>
                             </Grid>
                         </Grid>
