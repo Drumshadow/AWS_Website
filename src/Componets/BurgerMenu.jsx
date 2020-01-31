@@ -11,7 +11,7 @@ const Burgermenu = (props) => {
             </div>
         </Wrapper>
     );
-}
+};
 
 export default Burgermenu;
 

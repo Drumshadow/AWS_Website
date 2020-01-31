@@ -8,6 +8,7 @@ import Grid from "@material-ui/core/Grid";
 import Img from "react-image";
 import headShot from "./assets/ProfilePhoto.jpg";
 import Typography from "@material-ui/core/Typography";
+import Box from "@material-ui/core/Box";
 
 class App extends Component {
     state = {
@@ -44,6 +45,8 @@ class App extends Component {
                             </Grid>
                         </Grid>
                     </Paper>
+                </div>
+                <div>
                 </div>
                 <GlobalStyle/>
             </>
